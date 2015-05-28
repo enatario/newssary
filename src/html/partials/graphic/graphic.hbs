@@ -1,1 +1,19 @@
-<h1>hiya</h1>
+<header class='title'>
+	<h1 class='title--hed alpha'>Newssary</h1>
+	<p class='title--dek'>A lexicon of newsie terms</p>
+</header>
+
+{{!-- Sections, terms, and definitions --}}
+{{#each copy.section}}
+<section class='def-section'>
+	<h2 class='def-section--hed zeta'>{{section-letter}}</h2>
+	<dl class='term-list'>
+		{{#each term-list}}
+		<div class='term'>
+			<dt class='term--name'>{{term-name}}</dt>
+			<dd class='term--def'>{{term-definition}}</dd>
+		</div>
+		{{/each}}
+	</dl>
+</section>
+{{/each}}

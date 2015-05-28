@@ -1,18 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang='en'>
     <head>
         {{> base/base-meta }}
         {{> base/base-head }}
     </head>
     <body>
-        {{> base/base-header }}
 
-        <div id='globe-graphic-container' class='typeset'>
+        <div id='globe-graphic-container' class='contain' role='main'>
             {{> graphic/graphic }}
         </div>
+        
+        <footer class='credit theta'>
+            <address>Made by <a href='http://www.twitter.com/elainanatario' target='_blank'>Elaina</a> (づ｡◕‿‿◕｡)づ </address>
+        </footer>
 
-        {{> base/base-footer }}
-        {{> base/base-svg }}
         {{> base/base-js }}
         {{> base/base-analytics }}
     </body>

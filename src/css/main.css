@@ -1,0 +1,56 @@
+.contain {
+  width: 100%;
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 3em 1em;
+}
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 3em;
+}
+.title--hed {
+  font-family: Benton, Helvetica, Arial, sans-serif;
+}
+.title--dek {
+  padding-top: 0.5em;
+  font-style: italic;
+}
+.def-section {
+  margin-bottom: 3em;
+}
+.def-section:last-child {
+  margin-bottom: 0;
+}
+.def-section--hed {
+  font-family: Benton, Helvetica, Arial, sans-serif;
+  color: #266b5c;
+  background-color: #63c7b2;
+  border-bottom: 3px solid #266b5c;
+  padding: 0.25em 1em;
+}
+.term {
+  overflow: auto;
+  zoom: 1;
+  border-bottom: 1px solid #ccc;
+  padding: 1em;
+  color: #333;
+}
+.term:last-child {
+  border-bottom: 3px solid #ccc;
+}
+.term--name {
+  font-weight: 700;
+  float: left;
+  width: 35%;
+  padding-right: 1em;
+}
+.term--def {
+  float: left;
+  width: 65%;
+  padding-left: 1em;
+}
+.credit {
+  text-align: center;
+  padding: 1em 0;
+}

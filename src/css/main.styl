@@ -1,2 +1,72 @@
 // put your styles here
 // to reference images in the assets folder, use $assets-path + filename.jpg
+
+$site-width = 40em
+$benton = Benton, Helvetica, Arial, sans-serif
+$offblack = #333
+$offwhite = #ddd
+$primary = #63C7B2
+$dk-primary = darken($primary, 30)
+$indent = 1em
+
+.contain
+	width 100%
+	max-width $site-width
+	margin 0 auto
+	padding 3em 1em
+
+
+//Hed and Dek
+.title
+	text-align center
+	color $offblack
+	margin-bottom 3em
+	
+	&--hed
+		font-family $benton
+	
+	&--dek
+		padding-top 0.5em
+		font-style italic
+
+//Sections
+.def-section
+	margin-bottom 3em
+		
+	&:last-child
+		margin-bottom 0
+	
+	&--hed
+		font-family $benton
+		color $dk-primary
+		background-color: $primary
+		border-bottom 3px solid $dk-primary
+		padding 0.25em $indent
+	
+	
+//Terms	
+.term
+	overflow auto
+	zoom 1
+	border-bottom 1px solid #ccc
+	padding $indent
+	color $offblack
+	
+	&:last-child
+		border-bottom 3px solid #ccc
+	
+	&--name
+		font-weight 700
+		float left
+		width 35%
+		padding-right $indent
+		
+	&--def
+		float left
+		width 65%
+		padding-left $indent
+
+//Footer
+.credit
+	text-align center
+	padding $indent 0
