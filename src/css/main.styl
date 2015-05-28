@@ -57,14 +57,16 @@ $indent = 1em
 	
 	&--name
 		font-weight 700
-		float left
-		width 35%
-		padding-right $indent
+		@media screen and (min-width: 30em)
+			float left
+			width 35%
+			padding-right $indent
 		
 	&--def
-		float left
-		width 65%
-		padding-left $indent
+		@media screen and (min-width: 30em)
+			float left
+			width 65%
+			padding-left $indent
 
 //Footer
 .credit
